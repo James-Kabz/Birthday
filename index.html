@@ -29,18 +29,13 @@
                               background-color: #ff6f61;
                               color: white;
                               padding: 20px 0;
-                              animation: bounceIn 2s ease;
+                              animation: bounceIn 1.5s ease;
                     }
 
                     @keyframes bounceIn {
                               0% {
-                                        transform: scale(0.8);
+                                        transform: scale(0.9);
                                         opacity: 0;
-                              }
-
-                              50% {
-                                        transform: scale(1.1);
-                                        opacity: 0.9;
                               }
 
                               100% {
@@ -52,22 +47,22 @@
                     header h1 {
                               font-size: 3em;
                               margin: 0;
-                              animation: textGlow 2s infinite alternate;
+                              animation: textGlow 1.5s infinite alternate;
                     }
 
                     @keyframes textGlow {
                               0% {
-                                        text-shadow: 0 0 10px #fff, 0 0 20px #ff6f61, 0 0 30px #ff6f61;
+                                        text-shadow: 0 0 5px #fff, 0 0 15px #ff6f61;
                               }
 
                               100% {
-                                        text-shadow: 0 0 20px #fff, 0 0 30px #ff6f61, 0 0 40px #ff6f61;
+                                        text-shadow: 0 0 15px #fff, 0 0 25px #ff6f61;
                               }
                     }
 
                     main {
                               padding: 20px;
-                              animation: fadeIn 3s ease;
+                              animation: fadeIn 2s ease;
                     }
 
                     @keyframes fadeIn {
@@ -83,30 +78,18 @@
                     .birthday-message {
                               font-size: 1.5em;
                               margin: 20px 0;
-                              animation: slideIn 2s ease-out;
-                    }
-
-                    @keyframes slideIn {
-                              0% {
-                                        transform: translateY(50px);
-                                        opacity: 0;
-                              }
-
-                              100% {
-                                        transform: translateY(0);
-                                        opacity: 1;
-                              }
+                              animation: fadeIn 2s ease;
                     }
 
                     .image-container {
                               margin: 30px auto;
                               max-width: 400px;
-                              animation: zoomIn 2s ease;
+                              animation: zoomIn 1.5s ease;
                     }
 
                     @keyframes zoomIn {
                               0% {
-                                        transform: scale(0.8);
+                                        transform: scale(0.9);
                                         opacity: 0;
                               }
 
@@ -131,18 +114,32 @@
                               background: #ff6f61;
                               border-radius: 5px;
                               display: inline-block;
-                              animation: fadeInUp 2s ease;
+                              animation: fadeInUp 1.5s ease;
                     }
 
                     @keyframes fadeInUp {
                               0% {
-                                        transform: translateY(20px);
+                                        transform: translateY(10px);
                                         opacity: 0;
                               }
 
                               100% {
                                         transform: translateY(0);
                                         opacity: 1;
+                              }
+                    }
+
+                    @media (max-width: 768px) {
+                              header h1 {
+                                        font-size: 2.5em;
+                              }
+
+                              .birthday-message {
+                                        font-size: 1.2em;
+                              }
+
+                              .thank-you {
+                                        font-size: 1em;
                               }
                     }
           </style>
